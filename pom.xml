@@ -15,7 +15,10 @@
         <spring-cloud.version>Hoxton.SR2</spring-cloud.version>
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <spring-alibaba.version>2.2.2.RELEASE</spring-alibaba.version>
-        <docker.version>dev</docker.version>
+        <profile.env>dev</profile.env>
+        <nacos.discovery.address>127.0.0.1:8848</nacos.discovery.address>
+        <nacos.config.address>127.0.0.1:8848</nacos.config.address>
+        <nacos.config.group>DEFAULT_GROUP</nacos.config.group>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -67,6 +70,13 @@
                 <artifactId>springfox-boot-starter</artifactId>
                 <version>3.0.0</version>
             </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>1.5.20</version>
+                <scope>compile</scope>
+                <optional>true</optional>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
@@ -75,7 +85,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>2.2.2.RELEASE</version>
+                    <version>${spring-boot.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
