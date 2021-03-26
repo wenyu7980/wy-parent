@@ -16,6 +16,7 @@
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <spring-alibaba.version>2.2.2.RELEASE</spring-alibaba.version>
         <profile.env>dev</profile.env>
+        <docker.project.name>wy-cloud</docker.project.name>
         <docker.address>127.0.0.1</docker.address>
         <nacos.discovery.address>127.0.0.1:8848</nacos.discovery.address>
         <nacos.config.address>127.0.0.1:8848</nacos.config.address>
