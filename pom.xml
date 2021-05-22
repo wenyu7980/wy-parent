@@ -15,7 +15,7 @@
         <spring-cloud.version>Hoxton.SR2</spring-cloud.version>
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <spring-alibaba.version>2.2.2.RELEASE</spring-alibaba.version>
-        <maven-compile-plugin.version>3.8.1</maven-compile-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <profile.env>dev</profile.env>
         <docker.project.name>wy-cloud</docker.project.name>
@@ -119,7 +119,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${maven-compile-plugin.version}</version>
+                    <version>${maven-compiler-plugin.version}</version>
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
