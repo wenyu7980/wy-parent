@@ -94,11 +94,6 @@
                 <artifactId>statemachine</artifactId>
                 <version>3.0.0</version>
             </dependency>
-            <dependency>
-                <groupId>com.wenyu7980</groupId>
-                <artifactId>jpaQuery</artifactId>
-                <version>3.3.0</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
